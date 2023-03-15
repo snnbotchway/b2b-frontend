@@ -9,13 +9,17 @@ const AppProvider = ({ children }) => {
 	function storeToken(token) {
 		sessionStorage.setItem("_token", `Token ${token}`);
 	}
+	function clearStorage() {
+		sessionStorage.clear();
+	}
 	function isLoggedIn() {
 		console.log("here");
 		return sessionStorage.getItem("_token") !== null;
 	}
 
 	return (
-		<AppContext.Provider value={{ isLoggedIn, navigate, storeToken }}>
+		<AppContext.Provider
+			value={{ isLoggedIn, navigate, storeToken, clearStorage }}>
 			{children}
 		</AppContext.Provider>
 	);
