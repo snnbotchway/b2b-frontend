@@ -14,7 +14,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import AlertDialog from "../components/AlertDialog";
 import Copyright from "../components/Copyright";
-import b2b from "../images/b2b.png";
 import SimpleBackdrop from "../components/SimpleBackdrop";
 
 <Copyright />;
@@ -119,7 +118,7 @@ export default function Login() {
 						}}>
 						<img
 							style={{ maxHeight: "100px" }}
-							src={b2b}
+							src="https://i.ibb.co/Jrvn2s3/b2b.png"
 							alt="app-logo"
 						/>
 						<Box sx={{ mt: 3 }}>

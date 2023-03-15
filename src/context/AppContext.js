@@ -13,7 +13,6 @@ const AppProvider = ({ children }) => {
 		sessionStorage.clear();
 	}
 	function isLoggedIn() {
-		console.log("here");
 		return sessionStorage.getItem("_token") !== null;
 	}
 

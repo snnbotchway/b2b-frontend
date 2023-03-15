@@ -13,8 +13,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 
-import b2b from "../images/b2b.png";
-
 const settings = ["Logout"];
 
 function Header() {
@@ -42,7 +40,7 @@ function Header() {
 							display: ["none", "flex"],
 						}}
 						style={{ maxHeight: "4vh" }}
-						src={b2b}
+						src="https://i.ibb.co/Jrvn2s3/b2b.png"
 						alt="app-logo"
 					/>
 					<Typography
